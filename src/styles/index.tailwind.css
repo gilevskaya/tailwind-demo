@@ -1,17 +1,21 @@
 @tailwind base;
+
+h2,
+.h2 {
+  @apply text-px24 font-bold text-center;
+}
+
+p,
+.p1 {
+  @apply text-px13 text-left;
+}
+
 @tailwind components;
 @tailwind utilities;
 
 body {
+  /* Create react app defaults */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

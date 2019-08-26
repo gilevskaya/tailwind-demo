@@ -546,7 +546,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -580,6 +580,19 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+h2,
+.h2 {
+  font-size: 1.846153846rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+p,
+.p1 {
+  font-size: 1rem;
+  text-align: left;
 }
 
 .container {
@@ -1046,6 +1059,18 @@ video {
   background-color: #702459;
 }
 
+.bg-grey-10 {
+  background-color: #F5F9FA;
+}
+
+.bg-grey-60 {
+  background-color: #2C4C57;
+}
+
+.bg-grey-90 {
+  background-color: #07171C;
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -1418,6 +1443,18 @@ video {
   background-color: #702459;
 }
 
+.hover\:bg-grey-10:hover {
+  background-color: #F5F9FA;
+}
+
+.hover\:bg-grey-60:hover {
+  background-color: #2C4C57;
+}
+
+.hover\:bg-grey-90:hover {
+  background-color: #07171C;
+}
+
 .focus\:bg-transparent:focus {
   background-color: transparent;
 }
@@ -1788,6 +1825,18 @@ video {
 
 .focus\:bg-pink-900:focus {
   background-color: #702459;
+}
+
+.focus\:bg-grey-10:focus {
+  background-color: #F5F9FA;
+}
+
+.focus\:bg-grey-60:focus {
+  background-color: #2C4C57;
+}
+
+.focus\:bg-grey-90:focus {
+  background-color: #07171C;
 }
 
 .bg-bottom {
@@ -2242,6 +2291,18 @@ video {
   border-color: #702459;
 }
 
+.border-grey-10 {
+  border-color: #F5F9FA;
+}
+
+.border-grey-60 {
+  border-color: #2C4C57;
+}
+
+.border-grey-90 {
+  border-color: #07171C;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -2614,6 +2675,18 @@ video {
   border-color: #702459;
 }
 
+.hover\:border-grey-10:hover {
+  border-color: #F5F9FA;
+}
+
+.hover\:border-grey-60:hover {
+  border-color: #2C4C57;
+}
+
+.hover\:border-grey-90:hover {
+  border-color: #07171C;
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -2984,6 +3057,18 @@ video {
 
 .focus\:border-pink-900:focus {
   border-color: #702459;
+}
+
+.focus\:border-grey-10:focus {
+  border-color: #F5F9FA;
+}
+
+.focus\:border-grey-60:focus {
+  border-color: #2C4C57;
+}
+
+.focus\:border-grey-90:focus {
+  border-color: #07171C;
 }
 
 .rounded-none {
@@ -3588,16 +3673,12 @@ video {
   clear: both;
 }
 
-.font-sans {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-display {
+  font-family: Open Sans, sans-serif;
 }
 
-.font-serif {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.font-body {
+  font-family: Open Sans, sans-serif;
 }
 
 .font-hairline {
@@ -3912,6 +3993,14 @@ video {
   margin: 16rem;
 }
 
+.m-96 {
+  margin: 24rem;
+}
+
+.m-128 {
+  margin: 32rem;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -4170,6 +4259,26 @@ video {
 .mx-64 {
   margin-left: 16rem;
   margin-right: 16rem;
+}
+
+.my-96 {
+  margin-top: 24rem;
+  margin-bottom: 24rem;
+}
+
+.mx-96 {
+  margin-left: 24rem;
+  margin-right: 24rem;
+}
+
+.my-128 {
+  margin-top: 32rem;
+  margin-bottom: 32rem;
+}
+
+.mx-128 {
+  margin-left: 32rem;
+  margin-right: 32rem;
 }
 
 .my-auto {
@@ -4658,6 +4767,38 @@ video {
 
 .ml-64 {
   margin-left: 16rem;
+}
+
+.mt-96 {
+  margin-top: 24rem;
+}
+
+.mr-96 {
+  margin-right: 24rem;
+}
+
+.mb-96 {
+  margin-bottom: 24rem;
+}
+
+.ml-96 {
+  margin-left: 24rem;
+}
+
+.mt-128 {
+  margin-top: 32rem;
+}
+
+.mr-128 {
+  margin-right: 32rem;
+}
+
+.mb-128 {
+  margin-bottom: 32rem;
+}
+
+.ml-128 {
+  margin-left: 32rem;
 }
 
 .mt-auto {
@@ -6174,6 +6315,18 @@ video {
   color: #702459;
 }
 
+.placeholder-grey-10::placeholder {
+  color: #F5F9FA;
+}
+
+.placeholder-grey-60::placeholder {
+  color: #2C4C57;
+}
+
+.placeholder-grey-90::placeholder {
+  color: #07171C;
+}
+
 .focus\:placeholder-transparent:focus::placeholder {
   color: transparent;
 }
@@ -6544,6 +6697,18 @@ video {
 
 .focus\:placeholder-pink-900:focus::placeholder {
   color: #702459;
+}
+
+.focus\:placeholder-grey-10:focus::placeholder {
+  color: #F5F9FA;
+}
+
+.focus\:placeholder-grey-60:focus::placeholder {
+  color: #2C4C57;
+}
+
+.focus\:placeholder-grey-90:focus::placeholder {
+  color: #07171C;
 }
 
 .pointer-events-none {
@@ -7157,6 +7322,18 @@ video {
   color: #702459;
 }
 
+.text-grey-10 {
+  color: #F5F9FA;
+}
+
+.text-grey-60 {
+  color: #2C4C57;
+}
+
+.text-grey-90 {
+  color: #07171C;
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -7527,6 +7704,18 @@ video {
 
 .hover\:text-pink-900:hover {
   color: #702459;
+}
+
+.hover\:text-grey-10:hover {
+  color: #F5F9FA;
+}
+
+.hover\:text-grey-60:hover {
+  color: #2C4C57;
+}
+
+.hover\:text-grey-90:hover {
+  color: #07171C;
 }
 
 .focus\:text-transparent:focus {
@@ -7901,44 +8090,24 @@ video {
   color: #702459;
 }
 
-.text-xs {
-  font-size: 0.75rem;
+.focus\:text-grey-10:focus {
+  color: #F5F9FA;
 }
 
-.text-sm {
-  font-size: 0.875rem;
+.focus\:text-grey-60:focus {
+  color: #2C4C57;
 }
 
-.text-base {
+.focus\:text-grey-90:focus {
+  color: #07171C;
+}
+
+.text-px13 {
   font-size: 1rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-}
-
-.text-6xl {
-  font-size: 4rem;
+.text-px24 {
+  font-size: 1.846153846rem;
 }
 
 .italic {
@@ -8351,17 +8520,10 @@ video {
 }
 
 body {
+  /* Create react app defaults */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 @media (min-width: 640px) {
@@ -8801,6 +8963,18 @@ code {
     background-color: #702459;
   }
 
+  .sm\:bg-grey-10 {
+    background-color: #F5F9FA;
+  }
+
+  .sm\:bg-grey-60 {
+    background-color: #2C4C57;
+  }
+
+  .sm\:bg-grey-90 {
+    background-color: #07171C;
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -9173,6 +9347,18 @@ code {
     background-color: #702459;
   }
 
+  .sm\:hover\:bg-grey-10:hover {
+    background-color: #F5F9FA;
+  }
+
+  .sm\:hover\:bg-grey-60:hover {
+    background-color: #2C4C57;
+  }
+
+  .sm\:hover\:bg-grey-90:hover {
+    background-color: #07171C;
+  }
+
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -9543,6 +9729,18 @@ code {
 
   .sm\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .sm\:focus\:bg-grey-10:focus {
+    background-color: #F5F9FA;
+  }
+
+  .sm\:focus\:bg-grey-60:focus {
+    background-color: #2C4C57;
+  }
+
+  .sm\:focus\:bg-grey-90:focus {
+    background-color: #07171C;
   }
 
   .sm\:bg-bottom {
@@ -9997,6 +10195,18 @@ code {
     border-color: #702459;
   }
 
+  .sm\:border-grey-10 {
+    border-color: #F5F9FA;
+  }
+
+  .sm\:border-grey-60 {
+    border-color: #2C4C57;
+  }
+
+  .sm\:border-grey-90 {
+    border-color: #07171C;
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -10369,6 +10579,18 @@ code {
     border-color: #702459;
   }
 
+  .sm\:hover\:border-grey-10:hover {
+    border-color: #F5F9FA;
+  }
+
+  .sm\:hover\:border-grey-60:hover {
+    border-color: #2C4C57;
+  }
+
+  .sm\:hover\:border-grey-90:hover {
+    border-color: #07171C;
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -10739,6 +10961,18 @@ code {
 
   .sm\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .sm\:focus\:border-grey-10:focus {
+    border-color: #F5F9FA;
+  }
+
+  .sm\:focus\:border-grey-60:focus {
+    border-color: #2C4C57;
+  }
+
+  .sm\:focus\:border-grey-90:focus {
+    border-color: #07171C;
   }
 
   .sm\:rounded-none {
@@ -11343,16 +11577,12 @@ code {
     clear: both;
   }
 
-  .sm\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .sm\:font-display {
+    font-family: Open Sans, sans-serif;
   }
 
-  .sm\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .sm\:font-body {
+    font-family: Open Sans, sans-serif;
   }
 
   .sm\:font-hairline {
@@ -11667,6 +11897,14 @@ code {
     margin: 16rem;
   }
 
+  .sm\:m-96 {
+    margin: 24rem;
+  }
+
+  .sm\:m-128 {
+    margin: 32rem;
+  }
+
   .sm\:m-auto {
     margin: auto;
   }
@@ -11925,6 +12163,26 @@ code {
   .sm\:mx-64 {
     margin-left: 16rem;
     margin-right: 16rem;
+  }
+
+  .sm\:my-96 {
+    margin-top: 24rem;
+    margin-bottom: 24rem;
+  }
+
+  .sm\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+
+  .sm\:my-128 {
+    margin-top: 32rem;
+    margin-bottom: 32rem;
+  }
+
+  .sm\:mx-128 {
+    margin-left: 32rem;
+    margin-right: 32rem;
   }
 
   .sm\:my-auto {
@@ -12413,6 +12671,38 @@ code {
 
   .sm\:ml-64 {
     margin-left: 16rem;
+  }
+
+  .sm\:mt-96 {
+    margin-top: 24rem;
+  }
+
+  .sm\:mr-96 {
+    margin-right: 24rem;
+  }
+
+  .sm\:mb-96 {
+    margin-bottom: 24rem;
+  }
+
+  .sm\:ml-96 {
+    margin-left: 24rem;
+  }
+
+  .sm\:mt-128 {
+    margin-top: 32rem;
+  }
+
+  .sm\:mr-128 {
+    margin-right: 32rem;
+  }
+
+  .sm\:mb-128 {
+    margin-bottom: 32rem;
+  }
+
+  .sm\:ml-128 {
+    margin-left: 32rem;
   }
 
   .sm\:mt-auto {
@@ -13929,6 +14219,18 @@ code {
     color: #702459;
   }
 
+  .sm\:placeholder-grey-10::placeholder {
+    color: #F5F9FA;
+  }
+
+  .sm\:placeholder-grey-60::placeholder {
+    color: #2C4C57;
+  }
+
+  .sm\:placeholder-grey-90::placeholder {
+    color: #07171C;
+  }
+
   .sm\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -14299,6 +14601,18 @@ code {
 
   .sm\:focus\:placeholder-pink-900:focus::placeholder {
     color: #702459;
+  }
+
+  .sm\:focus\:placeholder-grey-10:focus::placeholder {
+    color: #F5F9FA;
+  }
+
+  .sm\:focus\:placeholder-grey-60:focus::placeholder {
+    color: #2C4C57;
+  }
+
+  .sm\:focus\:placeholder-grey-90:focus::placeholder {
+    color: #07171C;
   }
 
   .sm\:pointer-events-none {
@@ -14912,6 +15226,18 @@ code {
     color: #702459;
   }
 
+  .sm\:text-grey-10 {
+    color: #F5F9FA;
+  }
+
+  .sm\:text-grey-60 {
+    color: #2C4C57;
+  }
+
+  .sm\:text-grey-90 {
+    color: #07171C;
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -15282,6 +15608,18 @@ code {
 
   .sm\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .sm\:hover\:text-grey-10:hover {
+    color: #F5F9FA;
+  }
+
+  .sm\:hover\:text-grey-60:hover {
+    color: #2C4C57;
+  }
+
+  .sm\:hover\:text-grey-90:hover {
+    color: #07171C;
   }
 
   .sm\:focus\:text-transparent:focus {
@@ -15656,44 +15994,24 @@ code {
     color: #702459;
   }
 
-  .sm\:text-xs {
-    font-size: 0.75rem;
+  .sm\:focus\:text-grey-10:focus {
+    color: #F5F9FA;
   }
 
-  .sm\:text-sm {
-    font-size: 0.875rem;
+  .sm\:focus\:text-grey-60:focus {
+    color: #2C4C57;
   }
 
-  .sm\:text-base {
+  .sm\:focus\:text-grey-90:focus {
+    color: #07171C;
+  }
+
+  .sm\:text-px13 {
     font-size: 1rem;
   }
 
-  .sm\:text-lg {
-    font-size: 1.125rem;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .sm\:text-6xl {
-    font-size: 4rem;
+  .sm\:text-px24 {
+    font-size: 1.846153846rem;
   }
 
   .sm\:italic {
@@ -16543,6 +16861,18 @@ code {
     background-color: #702459;
   }
 
+  .md\:bg-grey-10 {
+    background-color: #F5F9FA;
+  }
+
+  .md\:bg-grey-60 {
+    background-color: #2C4C57;
+  }
+
+  .md\:bg-grey-90 {
+    background-color: #07171C;
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -16915,6 +17245,18 @@ code {
     background-color: #702459;
   }
 
+  .md\:hover\:bg-grey-10:hover {
+    background-color: #F5F9FA;
+  }
+
+  .md\:hover\:bg-grey-60:hover {
+    background-color: #2C4C57;
+  }
+
+  .md\:hover\:bg-grey-90:hover {
+    background-color: #07171C;
+  }
+
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -17285,6 +17627,18 @@ code {
 
   .md\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .md\:focus\:bg-grey-10:focus {
+    background-color: #F5F9FA;
+  }
+
+  .md\:focus\:bg-grey-60:focus {
+    background-color: #2C4C57;
+  }
+
+  .md\:focus\:bg-grey-90:focus {
+    background-color: #07171C;
   }
 
   .md\:bg-bottom {
@@ -17739,6 +18093,18 @@ code {
     border-color: #702459;
   }
 
+  .md\:border-grey-10 {
+    border-color: #F5F9FA;
+  }
+
+  .md\:border-grey-60 {
+    border-color: #2C4C57;
+  }
+
+  .md\:border-grey-90 {
+    border-color: #07171C;
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -18111,6 +18477,18 @@ code {
     border-color: #702459;
   }
 
+  .md\:hover\:border-grey-10:hover {
+    border-color: #F5F9FA;
+  }
+
+  .md\:hover\:border-grey-60:hover {
+    border-color: #2C4C57;
+  }
+
+  .md\:hover\:border-grey-90:hover {
+    border-color: #07171C;
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -18481,6 +18859,18 @@ code {
 
   .md\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .md\:focus\:border-grey-10:focus {
+    border-color: #F5F9FA;
+  }
+
+  .md\:focus\:border-grey-60:focus {
+    border-color: #2C4C57;
+  }
+
+  .md\:focus\:border-grey-90:focus {
+    border-color: #07171C;
   }
 
   .md\:rounded-none {
@@ -19085,16 +19475,12 @@ code {
     clear: both;
   }
 
-  .md\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .md\:font-display {
+    font-family: Open Sans, sans-serif;
   }
 
-  .md\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .md\:font-body {
+    font-family: Open Sans, sans-serif;
   }
 
   .md\:font-hairline {
@@ -19409,6 +19795,14 @@ code {
     margin: 16rem;
   }
 
+  .md\:m-96 {
+    margin: 24rem;
+  }
+
+  .md\:m-128 {
+    margin: 32rem;
+  }
+
   .md\:m-auto {
     margin: auto;
   }
@@ -19667,6 +20061,26 @@ code {
   .md\:mx-64 {
     margin-left: 16rem;
     margin-right: 16rem;
+  }
+
+  .md\:my-96 {
+    margin-top: 24rem;
+    margin-bottom: 24rem;
+  }
+
+  .md\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+
+  .md\:my-128 {
+    margin-top: 32rem;
+    margin-bottom: 32rem;
+  }
+
+  .md\:mx-128 {
+    margin-left: 32rem;
+    margin-right: 32rem;
   }
 
   .md\:my-auto {
@@ -20155,6 +20569,38 @@ code {
 
   .md\:ml-64 {
     margin-left: 16rem;
+  }
+
+  .md\:mt-96 {
+    margin-top: 24rem;
+  }
+
+  .md\:mr-96 {
+    margin-right: 24rem;
+  }
+
+  .md\:mb-96 {
+    margin-bottom: 24rem;
+  }
+
+  .md\:ml-96 {
+    margin-left: 24rem;
+  }
+
+  .md\:mt-128 {
+    margin-top: 32rem;
+  }
+
+  .md\:mr-128 {
+    margin-right: 32rem;
+  }
+
+  .md\:mb-128 {
+    margin-bottom: 32rem;
+  }
+
+  .md\:ml-128 {
+    margin-left: 32rem;
   }
 
   .md\:mt-auto {
@@ -21671,6 +22117,18 @@ code {
     color: #702459;
   }
 
+  .md\:placeholder-grey-10::placeholder {
+    color: #F5F9FA;
+  }
+
+  .md\:placeholder-grey-60::placeholder {
+    color: #2C4C57;
+  }
+
+  .md\:placeholder-grey-90::placeholder {
+    color: #07171C;
+  }
+
   .md\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -22041,6 +22499,18 @@ code {
 
   .md\:focus\:placeholder-pink-900:focus::placeholder {
     color: #702459;
+  }
+
+  .md\:focus\:placeholder-grey-10:focus::placeholder {
+    color: #F5F9FA;
+  }
+
+  .md\:focus\:placeholder-grey-60:focus::placeholder {
+    color: #2C4C57;
+  }
+
+  .md\:focus\:placeholder-grey-90:focus::placeholder {
+    color: #07171C;
   }
 
   .md\:pointer-events-none {
@@ -22654,6 +23124,18 @@ code {
     color: #702459;
   }
 
+  .md\:text-grey-10 {
+    color: #F5F9FA;
+  }
+
+  .md\:text-grey-60 {
+    color: #2C4C57;
+  }
+
+  .md\:text-grey-90 {
+    color: #07171C;
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -23024,6 +23506,18 @@ code {
 
   .md\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .md\:hover\:text-grey-10:hover {
+    color: #F5F9FA;
+  }
+
+  .md\:hover\:text-grey-60:hover {
+    color: #2C4C57;
+  }
+
+  .md\:hover\:text-grey-90:hover {
+    color: #07171C;
   }
 
   .md\:focus\:text-transparent:focus {
@@ -23398,44 +23892,24 @@ code {
     color: #702459;
   }
 
-  .md\:text-xs {
-    font-size: 0.75rem;
+  .md\:focus\:text-grey-10:focus {
+    color: #F5F9FA;
   }
 
-  .md\:text-sm {
-    font-size: 0.875rem;
+  .md\:focus\:text-grey-60:focus {
+    color: #2C4C57;
   }
 
-  .md\:text-base {
+  .md\:focus\:text-grey-90:focus {
+    color: #07171C;
+  }
+
+  .md\:text-px13 {
     font-size: 1rem;
   }
 
-  .md\:text-lg {
-    font-size: 1.125rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 4rem;
+  .md\:text-px24 {
+    font-size: 1.846153846rem;
   }
 
   .md\:italic {
@@ -24285,6 +24759,18 @@ code {
     background-color: #702459;
   }
 
+  .lg\:bg-grey-10 {
+    background-color: #F5F9FA;
+  }
+
+  .lg\:bg-grey-60 {
+    background-color: #2C4C57;
+  }
+
+  .lg\:bg-grey-90 {
+    background-color: #07171C;
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -24657,6 +25143,18 @@ code {
     background-color: #702459;
   }
 
+  .lg\:hover\:bg-grey-10:hover {
+    background-color: #F5F9FA;
+  }
+
+  .lg\:hover\:bg-grey-60:hover {
+    background-color: #2C4C57;
+  }
+
+  .lg\:hover\:bg-grey-90:hover {
+    background-color: #07171C;
+  }
+
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -25027,6 +25525,18 @@ code {
 
   .lg\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .lg\:focus\:bg-grey-10:focus {
+    background-color: #F5F9FA;
+  }
+
+  .lg\:focus\:bg-grey-60:focus {
+    background-color: #2C4C57;
+  }
+
+  .lg\:focus\:bg-grey-90:focus {
+    background-color: #07171C;
   }
 
   .lg\:bg-bottom {
@@ -25481,6 +25991,18 @@ code {
     border-color: #702459;
   }
 
+  .lg\:border-grey-10 {
+    border-color: #F5F9FA;
+  }
+
+  .lg\:border-grey-60 {
+    border-color: #2C4C57;
+  }
+
+  .lg\:border-grey-90 {
+    border-color: #07171C;
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -25853,6 +26375,18 @@ code {
     border-color: #702459;
   }
 
+  .lg\:hover\:border-grey-10:hover {
+    border-color: #F5F9FA;
+  }
+
+  .lg\:hover\:border-grey-60:hover {
+    border-color: #2C4C57;
+  }
+
+  .lg\:hover\:border-grey-90:hover {
+    border-color: #07171C;
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -26223,6 +26757,18 @@ code {
 
   .lg\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .lg\:focus\:border-grey-10:focus {
+    border-color: #F5F9FA;
+  }
+
+  .lg\:focus\:border-grey-60:focus {
+    border-color: #2C4C57;
+  }
+
+  .lg\:focus\:border-grey-90:focus {
+    border-color: #07171C;
   }
 
   .lg\:rounded-none {
@@ -26827,16 +27373,12 @@ code {
     clear: both;
   }
 
-  .lg\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .lg\:font-display {
+    font-family: Open Sans, sans-serif;
   }
 
-  .lg\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .lg\:font-body {
+    font-family: Open Sans, sans-serif;
   }
 
   .lg\:font-hairline {
@@ -27151,6 +27693,14 @@ code {
     margin: 16rem;
   }
 
+  .lg\:m-96 {
+    margin: 24rem;
+  }
+
+  .lg\:m-128 {
+    margin: 32rem;
+  }
+
   .lg\:m-auto {
     margin: auto;
   }
@@ -27409,6 +27959,26 @@ code {
   .lg\:mx-64 {
     margin-left: 16rem;
     margin-right: 16rem;
+  }
+
+  .lg\:my-96 {
+    margin-top: 24rem;
+    margin-bottom: 24rem;
+  }
+
+  .lg\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+
+  .lg\:my-128 {
+    margin-top: 32rem;
+    margin-bottom: 32rem;
+  }
+
+  .lg\:mx-128 {
+    margin-left: 32rem;
+    margin-right: 32rem;
   }
 
   .lg\:my-auto {
@@ -27897,6 +28467,38 @@ code {
 
   .lg\:ml-64 {
     margin-left: 16rem;
+  }
+
+  .lg\:mt-96 {
+    margin-top: 24rem;
+  }
+
+  .lg\:mr-96 {
+    margin-right: 24rem;
+  }
+
+  .lg\:mb-96 {
+    margin-bottom: 24rem;
+  }
+
+  .lg\:ml-96 {
+    margin-left: 24rem;
+  }
+
+  .lg\:mt-128 {
+    margin-top: 32rem;
+  }
+
+  .lg\:mr-128 {
+    margin-right: 32rem;
+  }
+
+  .lg\:mb-128 {
+    margin-bottom: 32rem;
+  }
+
+  .lg\:ml-128 {
+    margin-left: 32rem;
   }
 
   .lg\:mt-auto {
@@ -29413,6 +30015,18 @@ code {
     color: #702459;
   }
 
+  .lg\:placeholder-grey-10::placeholder {
+    color: #F5F9FA;
+  }
+
+  .lg\:placeholder-grey-60::placeholder {
+    color: #2C4C57;
+  }
+
+  .lg\:placeholder-grey-90::placeholder {
+    color: #07171C;
+  }
+
   .lg\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -29783,6 +30397,18 @@ code {
 
   .lg\:focus\:placeholder-pink-900:focus::placeholder {
     color: #702459;
+  }
+
+  .lg\:focus\:placeholder-grey-10:focus::placeholder {
+    color: #F5F9FA;
+  }
+
+  .lg\:focus\:placeholder-grey-60:focus::placeholder {
+    color: #2C4C57;
+  }
+
+  .lg\:focus\:placeholder-grey-90:focus::placeholder {
+    color: #07171C;
   }
 
   .lg\:pointer-events-none {
@@ -30396,6 +31022,18 @@ code {
     color: #702459;
   }
 
+  .lg\:text-grey-10 {
+    color: #F5F9FA;
+  }
+
+  .lg\:text-grey-60 {
+    color: #2C4C57;
+  }
+
+  .lg\:text-grey-90 {
+    color: #07171C;
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -30766,6 +31404,18 @@ code {
 
   .lg\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .lg\:hover\:text-grey-10:hover {
+    color: #F5F9FA;
+  }
+
+  .lg\:hover\:text-grey-60:hover {
+    color: #2C4C57;
+  }
+
+  .lg\:hover\:text-grey-90:hover {
+    color: #07171C;
   }
 
   .lg\:focus\:text-transparent:focus {
@@ -31140,44 +31790,24 @@ code {
     color: #702459;
   }
 
-  .lg\:text-xs {
-    font-size: 0.75rem;
+  .lg\:focus\:text-grey-10:focus {
+    color: #F5F9FA;
   }
 
-  .lg\:text-sm {
-    font-size: 0.875rem;
+  .lg\:focus\:text-grey-60:focus {
+    color: #2C4C57;
   }
 
-  .lg\:text-base {
+  .lg\:focus\:text-grey-90:focus {
+    color: #07171C;
+  }
+
+  .lg\:text-px13 {
     font-size: 1rem;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 4rem;
+  .lg\:text-px24 {
+    font-size: 1.846153846rem;
   }
 
   .lg\:italic {
@@ -32027,6 +32657,18 @@ code {
     background-color: #702459;
   }
 
+  .xl\:bg-grey-10 {
+    background-color: #F5F9FA;
+  }
+
+  .xl\:bg-grey-60 {
+    background-color: #2C4C57;
+  }
+
+  .xl\:bg-grey-90 {
+    background-color: #07171C;
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -32399,6 +33041,18 @@ code {
     background-color: #702459;
   }
 
+  .xl\:hover\:bg-grey-10:hover {
+    background-color: #F5F9FA;
+  }
+
+  .xl\:hover\:bg-grey-60:hover {
+    background-color: #2C4C57;
+  }
+
+  .xl\:hover\:bg-grey-90:hover {
+    background-color: #07171C;
+  }
+
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -32769,6 +33423,18 @@ code {
 
   .xl\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .xl\:focus\:bg-grey-10:focus {
+    background-color: #F5F9FA;
+  }
+
+  .xl\:focus\:bg-grey-60:focus {
+    background-color: #2C4C57;
+  }
+
+  .xl\:focus\:bg-grey-90:focus {
+    background-color: #07171C;
   }
 
   .xl\:bg-bottom {
@@ -33223,6 +33889,18 @@ code {
     border-color: #702459;
   }
 
+  .xl\:border-grey-10 {
+    border-color: #F5F9FA;
+  }
+
+  .xl\:border-grey-60 {
+    border-color: #2C4C57;
+  }
+
+  .xl\:border-grey-90 {
+    border-color: #07171C;
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -33595,6 +34273,18 @@ code {
     border-color: #702459;
   }
 
+  .xl\:hover\:border-grey-10:hover {
+    border-color: #F5F9FA;
+  }
+
+  .xl\:hover\:border-grey-60:hover {
+    border-color: #2C4C57;
+  }
+
+  .xl\:hover\:border-grey-90:hover {
+    border-color: #07171C;
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -33965,6 +34655,18 @@ code {
 
   .xl\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .xl\:focus\:border-grey-10:focus {
+    border-color: #F5F9FA;
+  }
+
+  .xl\:focus\:border-grey-60:focus {
+    border-color: #2C4C57;
+  }
+
+  .xl\:focus\:border-grey-90:focus {
+    border-color: #07171C;
   }
 
   .xl\:rounded-none {
@@ -34569,16 +35271,12 @@ code {
     clear: both;
   }
 
-  .xl\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .xl\:font-display {
+    font-family: Open Sans, sans-serif;
   }
 
-  .xl\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .xl\:font-body {
+    font-family: Open Sans, sans-serif;
   }
 
   .xl\:font-hairline {
@@ -34893,6 +35591,14 @@ code {
     margin: 16rem;
   }
 
+  .xl\:m-96 {
+    margin: 24rem;
+  }
+
+  .xl\:m-128 {
+    margin: 32rem;
+  }
+
   .xl\:m-auto {
     margin: auto;
   }
@@ -35151,6 +35857,26 @@ code {
   .xl\:mx-64 {
     margin-left: 16rem;
     margin-right: 16rem;
+  }
+
+  .xl\:my-96 {
+    margin-top: 24rem;
+    margin-bottom: 24rem;
+  }
+
+  .xl\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+
+  .xl\:my-128 {
+    margin-top: 32rem;
+    margin-bottom: 32rem;
+  }
+
+  .xl\:mx-128 {
+    margin-left: 32rem;
+    margin-right: 32rem;
   }
 
   .xl\:my-auto {
@@ -35639,6 +36365,38 @@ code {
 
   .xl\:ml-64 {
     margin-left: 16rem;
+  }
+
+  .xl\:mt-96 {
+    margin-top: 24rem;
+  }
+
+  .xl\:mr-96 {
+    margin-right: 24rem;
+  }
+
+  .xl\:mb-96 {
+    margin-bottom: 24rem;
+  }
+
+  .xl\:ml-96 {
+    margin-left: 24rem;
+  }
+
+  .xl\:mt-128 {
+    margin-top: 32rem;
+  }
+
+  .xl\:mr-128 {
+    margin-right: 32rem;
+  }
+
+  .xl\:mb-128 {
+    margin-bottom: 32rem;
+  }
+
+  .xl\:ml-128 {
+    margin-left: 32rem;
   }
 
   .xl\:mt-auto {
@@ -37155,6 +37913,18 @@ code {
     color: #702459;
   }
 
+  .xl\:placeholder-grey-10::placeholder {
+    color: #F5F9FA;
+  }
+
+  .xl\:placeholder-grey-60::placeholder {
+    color: #2C4C57;
+  }
+
+  .xl\:placeholder-grey-90::placeholder {
+    color: #07171C;
+  }
+
   .xl\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -37525,6 +38295,18 @@ code {
 
   .xl\:focus\:placeholder-pink-900:focus::placeholder {
     color: #702459;
+  }
+
+  .xl\:focus\:placeholder-grey-10:focus::placeholder {
+    color: #F5F9FA;
+  }
+
+  .xl\:focus\:placeholder-grey-60:focus::placeholder {
+    color: #2C4C57;
+  }
+
+  .xl\:focus\:placeholder-grey-90:focus::placeholder {
+    color: #07171C;
   }
 
   .xl\:pointer-events-none {
@@ -38138,6 +38920,18 @@ code {
     color: #702459;
   }
 
+  .xl\:text-grey-10 {
+    color: #F5F9FA;
+  }
+
+  .xl\:text-grey-60 {
+    color: #2C4C57;
+  }
+
+  .xl\:text-grey-90 {
+    color: #07171C;
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -38508,6 +39302,18 @@ code {
 
   .xl\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .xl\:hover\:text-grey-10:hover {
+    color: #F5F9FA;
+  }
+
+  .xl\:hover\:text-grey-60:hover {
+    color: #2C4C57;
+  }
+
+  .xl\:hover\:text-grey-90:hover {
+    color: #07171C;
   }
 
   .xl\:focus\:text-transparent:focus {
@@ -38882,44 +39688,24 @@ code {
     color: #702459;
   }
 
-  .xl\:text-xs {
-    font-size: 0.75rem;
+  .xl\:focus\:text-grey-10:focus {
+    color: #F5F9FA;
   }
 
-  .xl\:text-sm {
-    font-size: 0.875rem;
+  .xl\:focus\:text-grey-60:focus {
+    color: #2C4C57;
   }
 
-  .xl\:text-base {
+  .xl\:focus\:text-grey-90:focus {
+    color: #07171C;
+  }
+
+  .xl\:text-px13 {
     font-size: 1rem;
   }
 
-  .xl\:text-lg {
-    font-size: 1.125rem;
-  }
-
-  .xl\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .xl\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .xl\:text-6xl {
-    font-size: 4rem;
+  .xl\:text-px24 {
+    font-size: 1.846153846rem;
   }
 
   .xl\:italic {
