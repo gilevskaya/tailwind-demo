@@ -1,4 +1,6 @@
 Tailwind demo with responsive design on top of the basic create-react-app.
+Code example https://github.com/gilevskaya/tailwind-demo/blob/master/src/App.js
+Config example https://github.com/gilevskaya/tailwind-demo/blob/master/tailwind.js
 
 ### Setup
 ```
