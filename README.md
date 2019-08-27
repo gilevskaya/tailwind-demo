@@ -22,7 +22,7 @@ yarn start
 
 * Compared to writing your own atomic classes, this solution **HAS DOCUMENTATION** and support, and also does the job for us, which is nice too; we can strap from all the things we don't need
 
-* Makes deveopment fast because all building blocks are already there; plus easy responsive design support
+* Blazing fast development because all building blocks are already there; plus easy responsive design support
 
 * This can live in parallel with exsisting scss code; potentially does everything scss does, so can be used instead
 
