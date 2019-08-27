@@ -34,7 +34,7 @@ yarn start
 
 * By default generates large css file (with all the atomic classes), so we need to make sure to keep only things we use
 
-* Compile tailwind styles from several css files is not straight forward – whenever we'd want to use variables or `@apply` syntax in css it would compile to include all atomic classes again (maybe there is way around this + technically we'd probably use those atomic classes in the JSX code instead)
+* Compile tailwind styles from several css files is not straight forward – whenever we'd want to use variables or `@apply` syntax in css it would compile to include all atomic classes again (maybe there is way around this + technically we'd probably use those atomic classes in the JSX code instead) upd: https://www.purgecss.com/ seems to be solve this
 
 * Has some new syntax - shortcuts for css, so there is a learning curve; but the syntax is very limited and have I mentioned there is a documentation? :)
 
