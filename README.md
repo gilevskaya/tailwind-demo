@@ -8,19 +8,19 @@ yarn start
 
 ### Why this is great
 
-* Tailwind has no opinion on how things should look like (unlike other frameworks), it's lightweight and just generate a bunch of atomic classses for us
+* Tailwind has no opinion on how things should look like (unlike other frameworks), it's lightweight and all it does is generates a bunch of atomic classses
 
-* One config file `tailwind.js` that defines all of the design constants (colors, font-sizes, standard paddings etc.); which enforces developers to only use those, hence design consistency
+* One config file `tailwind.js` that defines all of the design constants (colors, font-sizes, standard paddings etc.); easy to maintain + enforces developers to only use those, hence design consistency
 
-* Atomic classes cover the most of the css needs, hence developers barely ever need to write css / create css files (most css work is setting up one config file)
+* Atomic classes cover most of the css needs, hence developers barely ever need to write css / create css files (most css work is setting up one config file)
 
-* Code is very descriptive / transperent. Vs. css approach you have to jump to css file to understand what's going on. Or vs. wrapper react components approach - the html+css logic gets hidden behind them
+* Code is very descriptive / transperent. Vs. css approach you have to jump to css file to understand what's going on. Or vs. wrapper react components approach - the html+css logic gets hidden behind the component implementation
 
 * Compared to writing your own atomic classes, this solution **HAS DOCUMENTATION** and support, and also does the job for us, which is nice too; we can strap from all the things we don't need
 
 * Makes deveopment fast because all building blocks are already there; plus easy responsive design support
 
-* This can live in parallel with exsisting scss code. Potentially does everything scss does, so can be used instead
+* This can live in parallel with exsisting scss code; potentially does everything scss does, so can be used instead
 
 * Framework has solid community adoption
 
@@ -28,11 +28,11 @@ yarn start
 
 ### Concerns 
 
-* By default generates large css file (with all the atomic classes), so we need to make sure to keep only things we use.
+* By default generates large css file (with all the atomic classes), so we need to make sure to keep only things we use
 
-* Compile tailwind styles from several css files is not straight forward – whenever we'd want to use variables or `@apply` syntax in css it would compile to include all atomic classes again (maybe there is way around this + technically we'd probably just use those atomic classes in the JSX code anyway)
+* Compile tailwind styles from several css files is not straight forward – whenever we'd want to use variables or `@apply` syntax in css it would compile to include all atomic classes again (maybe there is way around this + technically we'd probably use those atomic classes in the JSX code instead)
 
-* Has some new syntax - shortcuts for css, so there is a learning curve (but the syntax is very limited)
+* Has some new syntax - shortcuts for css, so there is a learning curve; but the syntax is very limited and have I mentioned there is a documentation? :)
 
 * Has a compile step
 
