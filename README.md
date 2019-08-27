@@ -42,4 +42,4 @@ yarn start
 
 ### Bottom line
 
-All it does is generates some atomic classes based on a config. I think the question is if we like the atomic classes approach overall (if we do this seems like a way to go). And we don't – how do we build a reusable design building blocks, that would enforce design consistency and speed up the development process.
+All it does is generates some atomic classes based on a config. I think the question is if we like the atomic classes approach overall (if we do this seems like a way to go). And we don't – how do we build a reusable system of design building blocks, that would enforce design consistency and speed up the development process.
