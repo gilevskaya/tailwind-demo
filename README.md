@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tailwind demo with responsive design on top of the basic create-react-app.
 
-## Available Scripts
+### Setup
+```
+yarn
+yarn start
+```
 
-In the project directory, you can run:
+### Why this is great
 
-### `npm start`
+* Tailwind has no opinion on how things should look like (unlike other frameworks), it's lightweight and just generate a bunch of atomic classses for us
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* One config file `tailwind.js` that defines all of the design constants (colors, font-sizes, standard paddings etc.); which enforces developers to only use those, hence design consistency
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+* Atomic classes cover the most of the css needs, hence developers barely ever need to write css / create css files (most css work is setting up one config file)
 
-### `npm test`
+* Code is very descriptive / transperent. Vs. css approach you have to jump to css file to understand what's going on. Or vs. wrapper react components approach - the html+css logic gets hidden behind them
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Compared to writing your own atomic classes, this solution **HAS DOCUMENTATION** and support, and also does the job for us, which is nice too; we can strap from all the things we don't need
 
-### `npm run build`
+* Makes deveopment fast because all building blocks are already there; plus easy responsive design support
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* This can live in parallel with exsisting scss code. Potentially does everything scss does, so can be used instead
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* Framework has solid community adoption
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* ...And I can't think of a cleaner way to do consistent typography for custom styles beyond `h1`, ... (like `p3`, or `cta`), that would also support some minor overriding like aligning text left instead of center or some margins, or color
 
-### `npm run eject`
+### Concerns 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* By default generates large css file (with all the atomic classes), so we need to make sure to keep only things we use.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Compile tailwind styles from several css files is not straight forward – whenever we'd want to use variables or `@apply` syntax in css it would compile to include all atomic classes again (maybe there is way around this + technically we'd probably just use those atomic classes in the JSX code anyway)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Has some new syntax - shortcuts for css, so there is a learning curve (but the syntax is very limited)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* Has a compile step
 
-## Learn More
+### Bottom line
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+All it does is generates some atomic classes based on a config. I think the question is if we like the atomic classes approach overall (if we do this seems like a way to go). And we don't – how do we build a reusable design building blocks, that would enforce design consistency and speed up the development process.
